@@ -1,3 +1,41 @@
 body {
-  font-family: "arial"
+  font-family: "arial", sans-serif;
+}
+
+.todo-grid,
+.todo-input-grid {
+  grid-template-columns: 200px 100px 100px;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.input-name,
+.due-date-input {
+  font-size: 15px;
+  padding: 6px;
+}
+
+.todo-input-grid {
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.add-todo-list-input {
+  background-color: green;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  border: none;
+}
+
+.todo-list-delete {
+  background-color: darkred;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  border: none;
 }
