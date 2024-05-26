@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>happy birthday</title>
+  <style>
+    .js-sub-button{
+      font-size: 40px;
+      padding:10px;
+      margin: 20px;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+
+  </style>
+</head>
+<body>
+<p></p>
+<button onclick="subscribe()" class="js-sub-button subscribe-button">what day is it?</button>
+
+
+
+<script>function subscribe (){const buttonElement = document.querySelector('.js-sub-button');
+
+  if (buttonElement.innerText === 'it\'s your birthday') {
+    buttonElement.innerHTML = "happy birthday";
+  } else {
+    buttonElement.innerHTML = 'it\'s your birthday'
+  }
+
+}</script>
+
+</body>
+</html>
